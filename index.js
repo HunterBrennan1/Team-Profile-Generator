@@ -1,10 +1,10 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const generateTeam = require("./src/page-template.js");
+import inquirer from "inquirer";
+import fs from "fs";
+import generateTeam from "./src/Generate-Template.js";
 
-const Manager = require("./lib/Manager.js");
-const Engineer = require("./lib/Engineer.js");
-const Intern = require("./lib/Intern.js");
+import Manager from "./lib/Manager.js";
+import Engineer from "./lib/Engineer.js";
+import Intern from "./lib/Intern.js";
 
 const teamMembers = [];
 

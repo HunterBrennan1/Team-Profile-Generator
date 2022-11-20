@@ -85,7 +85,7 @@ const generateTeam = (team) => {
 };
 
 // Generate entire page
-module.exports = (team) => {
+const Employee = (team) => {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -125,3 +125,5 @@ module.exports = (team) => {
     </html>
   `
 }
+
+export default generateTeam;
