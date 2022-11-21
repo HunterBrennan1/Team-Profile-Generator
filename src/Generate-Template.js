@@ -3,14 +3,14 @@ const generateTeam = (team) => {
   //Card Generator For Manager
   const generateManager = (manager) => {
     return `
-    <div class="card employee-card shadow mb-5 rounded" style="width: 18rem;">
-      <div class="card-header bg-primary">
-        <h2 class="card-title text-light">${manager.getName()}</h2>
-        <h3 class="card-title text-light"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
+    <div class="card employee-card">
+      <div class="card-header ">
+        <h2 class="card-title ">${manager.getName()}</h2>
+        <h3 class="card-title ">${manager.getRole()}</h3>
       </div>
-      <div class="container bg-light">
+      <div class="container">
         <div class="card-body">
-          <ul class="list-group list-group-flush table-bordered">
+          <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${manager.getId()}</li>
             <li class="list-group-item">Email: 
               <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -25,14 +25,14 @@ const generateTeam = (team) => {
   //Card Generator For Engineer
   const generateEngineer = (engineer) => {
     return `
-      <div class="card employee-card shadow mb-5 rounded" style="width: 18rem;">
-        <div class="card-header bg-primary">
-          <h2 class="card-title text-light">${engineer.getName()}</h2>
-          <h3 class="card-title text-light"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
+      <div class="card employee-card">
+        <div class="card-header">
+          <h2 class="card-title">${engineer.getName()}</h2>
+          <h3 class="card-title">${engineer.getRole()}</h3>
         </div>
-        <div class="container bg-light">
+        <div class="container">
           <div class="card-body">
-            <ul class="list-group list-group-flush table-bordered">
+            <ul class="list-group list-group-flush">
               <li class="list-group-item">ID: ${engineer.getId()}</li>
               <li class="list-group-item">Email: 
                 <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
@@ -48,14 +48,14 @@ const generateTeam = (team) => {
   //Card Generator For Intern
   const generateIntern = (intern) => {
     return `
-      <div class="card employee-card shadow mb-5 rounded" style="width: 18rem;">
-        <div class="card-header bg-primary">
-          <h2 class="card-title text-light">${intern.getName()}</h2>
-          <h3 class="card-title text-light"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
+      <div class="card employee-card">
+        <div class="card-header">
+          <h2 class="card-title">${intern.getName()}</h2>
+          <h3 class="card-title">${intern.getRole()}</h3>
         </div>
-        <div class="container bg-light">
+        <div class="container">
           <div class="card-body">
-            <ul class="list-group list-group-flush table-bordered">
+            <ul class="list-group list-group-flush">
               <li class="list-group-item">ID: ${intern.getId()}</li>
               <li class="list-group-item">Email: 
                 <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
@@ -85,8 +85,8 @@ const generateTeam = (team) => {
 };
 
 // Generate entire page
-const Employee = (team) => {
-  return `
+exports(team)
+  `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -96,12 +96,6 @@ const Employee = (team) => {
       <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      />
-      <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-          crossorigin="anonymous"
       />
       <link rel="stylesheet" href="style.css" />
       <title>Team Profile Generator</title>
@@ -124,6 +118,6 @@ const Employee = (team) => {
     </body>
     </html>
   `
-}
+
 
 export default generateTeam;
