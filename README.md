@@ -5,7 +5,7 @@
 ***
 
 ## Description
-This is an application for a mock company called "Primary Keys Rentals". The primary function is to allow users to view rental cars after logging in with an account and to add any cars they are interested in to a cart. Users can also filter out specific vehicles in certain categories using a dropdown menu. Additionally, they can even click the Reviews button on the cards to read any reviews that previous renters have posted and are also granted the option to post their own reviews.
+This is an application allows the user to create a employee profile for a team including intern,engineer, and manager. This allows the user to easily sort and store data for each employee.
 ***
 
 ## Table of Contents
@@ -33,13 +33,11 @@ This is an application for a mock company called "Primary Keys Rentals". The pri
 <a name="screenshots"></a>
 ## Screenshots
 
-![Login page](./Assets/Screen%20Shot%202022-09-28%20at%2010.29.21%20PM.png)
+![Login page](./dist/img/employeegen.JPG)
 ***
 
 <a name="links"></a>
 ## Links
-
-[Deployed-Application](https://primary-keys-rentals.herokuapp.com/)
 
 [Repo-Link](https://github.com/TottoMoe/PrimaryKeysRentals)
 ***
