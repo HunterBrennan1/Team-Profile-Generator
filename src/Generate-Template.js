@@ -85,7 +85,7 @@ const generateTeam = (team) => {
 };
 
 // Generate entire page
-exports(team)
+export function team() {
   `
     <!DOCTYPE html>
     <html lang="en">
@@ -118,6 +118,7 @@ exports(team)
     </body>
     </html>
   `
+}
 
 
 export default generateTeam;

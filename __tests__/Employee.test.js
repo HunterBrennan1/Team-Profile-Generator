@@ -1,4 +1,4 @@
-import Employee from "../lib/Employee";
+const Employee = ("../lib/Employee");
 
 describe("Employee", () => {
   const testEmployee = {
@@ -7,7 +7,7 @@ describe("Employee", () => {
     email: "HunterBrennandev@gmail.com",
   };
 
-  const obj = new Employee(
+  const obj = target.Employee(
     testEmployee.name,
     testEmployee.id,
     testEmployee.email
